@@ -119,6 +119,15 @@ li {
     margin-bottom: 10px;
 }
 
+.basquet li {
+    overflow-wrap: break-word;
+}
+
+.basquet a {
+    display: inline-block;
+    max-width: 100%;
+}
+
 /* TEXTO ESPECIAL */
 .subrayado {
     text-decoration: underline;
