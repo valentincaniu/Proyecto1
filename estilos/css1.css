@@ -105,6 +105,7 @@ ol {
     display: inline-block;
     text-align: left;
     margin-top: 15px;
+    max-width: 100%;
 }
 
 li {
