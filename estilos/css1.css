@@ -107,6 +107,9 @@ ol {
     text-align: left;
     margin-top: 15px;
     max-width: 100%;
+}
+
+ol a {
     word-break: break-word;
 }
 
