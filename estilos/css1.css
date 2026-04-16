@@ -107,6 +107,7 @@ ol {
     text-align: left;
     margin-top: 15px;
     max-width: 100%;
+    word-break: break-word;
 }
 
 li {
