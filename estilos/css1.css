@@ -110,6 +110,11 @@ ol {
     margin-top: 15px;
 }
 
+ol a {
+    display: block;
+    overflow-wrap: break-word;
+}
+
 li {
     margin-bottom: 10px;
 }
