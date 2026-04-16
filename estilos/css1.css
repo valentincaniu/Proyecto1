@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 /* BODY */
@@ -103,7 +104,8 @@ img:hover {
 
 /* LISTAS */
 ol {
-    display: inline-block;
+    width: 100%;
+    padding-left: 20px;
     text-align: left;
     margin-top: 15px;
 }
