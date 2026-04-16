@@ -214,4 +214,10 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
+    ol {
+        display: block;
+        width: 100%;
+        padding-left: 20px;
+    }
 }
