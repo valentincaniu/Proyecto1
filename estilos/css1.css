@@ -109,6 +109,7 @@ ol {
 
 li {
     margin-bottom: 10px;
+    word-break: break-word;
 }
 
 /* TEXTO ESPECIAL */
