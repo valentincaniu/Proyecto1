@@ -8,6 +8,7 @@
 /* BODY */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     background-color: #1e1e1e;
     color: #ffffff;
 }
@@ -17,6 +18,9 @@ header {
     background-color: #111;
     padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 h1 {
@@ -95,10 +99,6 @@ img {
     border: 2px solid white;
 }
 
-img:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
 
 /* LISTAS */
 ol {
@@ -165,7 +165,7 @@ footer {
 
 }
 
-/* HOVER (efecto pro) */
+/* HOVER */
 .card:hover {
     transform: translateY(-5px);
     background-color: #333;
@@ -177,7 +177,7 @@ footer {
     margin-bottom: 10px;
 }
 
-/* COLORES POR RED (detalle pro) */
+/* COLORES POR RED */
 .fa-linkedin {
     color: #0077b5;
 }
