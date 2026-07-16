@@ -1,56 +1,92 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi sitio personal - Inicio</title>
-    <link rel="stylesheet" href="estilos/css1.css">
+<!DOCTYPE html> <!-- Indica que el documento utiliza la versión HTML5. -->
+<html lang="es"> <!-- Elemento raíz de toda la página, define el idioma principal del sitio. --> <!-- ¿Para qué sirve "lang"? Ayuda a los navegadores, buscadores y lectores de pantalla. -->
+<head> <!-- Contiene información de configuración que no se muestra en la página. -->
+    <meta charset="UTF-8"> <!-- Permite mostrar correctamente caracteres especiales como tildes y la ñ. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el sitio sea responsive en celulares y tablets. -->
+    <title>Mi sitio personal - Inicio</title> <!-- Texto que aparece en la pestaña del navegador. -->
+    <link rel="stylesheet" href="estilos/css1.css"> <!-- Vincula el archivo CSS que define el diseño del sitio. -->
 </head>
-<body>
-    <header>
-        <h1>MI PRIMER SITIO</h1>
-        <nav>
-            <ul>
+
+<body> <!-- Contiene todo el contenido visible de la página. -->
+    
+    <header> <!-- Encabezado principal del sitio, se usa <header> porque es una etiqueta semántica. -->
+        
+        <h1>MI PRIMER SITIO</h1> <!-- Título principal de la página. Solo debería existir un h1 por página. -->
+        
+        <nav> <!-- Agrupa el menú de navegación, indica que contiene enlaces de navegación. -->
+            
+            <ul> <!-- Lista no ordenada utilizada para crear el menú. -->
+                
                 <li>
-                    Inicio
+                    Inicio <!-- Página actual. No tiene enlace porque el usuario ya está en ella. -->
                 </li>
+                
                 <li>
-                    <a href="intereses.html">Intereses</a>
+                    <a href="intereses.html">Intereses</a> <!-- Enlace interno hacia otra página del sitio. -->
                 </li>
+                
                 <li>
-                    <a href="contacto.html">Contacto</a>
+                    <a href="contacto.html">Contacto</a> <!-- Otro enlace interno del sitio. -->
                 </li>
+            
             </ul>
+        
         </nav>
+    
     </header>
-<main>
-    <section class="presentacion">
-        <h2>SOBRE MÍ</h2>
-        <p>Hola a todos y bienvenidos a mi sitio web personal. Me presento, mi nombre es Tiago Valentin Cañiu Caba, tengo 20 años y nací el 2 de octubre del año 2005 en la ciudad de San Carlos de Bariloche, donde pase gran parte de mi vida. Desde 2024 me encuentro viviendo solo en la ciudad de Buenos Aires, precisamente en Palermo, Capital Federal; donde me encuentro estudiando en la Universidad Argentina De la Empresa (UADE) la Licenciatura en Negocios Digitales, carrera en la cual estoy por el tercer año de cursada. Ademas de estudiar, soy jugador de <a href="#basquet">básquetbol</a>, actualmente para el Club Atlético All Boys.</p>
+
+<main> <!-- Contenido principal de la página, mejora la organización y la accesibilidad. -->
+
+    <section class="presentacion"> <!-- Primera sección del contenido principal, permite aplicar estilos CSS a esta sección. -->
+
+        <h2>SOBRE MÍ</h2> <!-- Título de segundo nivel de esta sección. -->
+
+        <p>
+            Hola a todos y bienvenidos a mi sitio web personal. Me presento, mi nombre es Tiago Valentin Cañiu Caba,
+            tengo 20 años y nací el 2 de octubre del año 2005 en la ciudad de San Carlos de Bariloche, donde pase gran
+            parte de mi vida. Desde 2024 me encuentro viviendo solo en la ciudad de Buenos Aires, precisamente en Palermo,
+            Capital Federal; donde me encuentro estudiando en la Universidad Argentina De la Empresa (UADE) la Licenciatura
+            en Negocios Digitales, carrera en la cual estoy por el tercer año de cursada. Ademas de estudiar, soy jugador
+            de <a href="#basquet">básquetbol</a>, actualmente para el Club Atlético All Boys.
+        </p> <!-- Párrafo descriptivo, href="#basquet" crea un enlace interno hacia un elemento cuyo id sea "basquet". -->
+
     </section>
 
-    <section class="imagen">
-        <h2>INFOGRAFIA PERSONAL</h2>
-        <img src="img/Infografia.jpg" alt="Mi presentacion">
+    <section class="imagen"> <!-- Sección destinada a mostrar una imagen. -->
+        
+        <h2>INFOGRAFIA PERSONAL</h2> <!-- Título de la sección. -->
+        
+        <img src="img/Infografia.jpg" alt="Mi presentacion"> <!-- src indica la ubicación, alt describe y mejora la accesibilidad si no carga. -->
+
     </section>
 
-    <section class="basquet" id="basquet">
+    <section class="basquet" id="basquet"> <!-- id="basquet" permite que los enlaces con href="#basquet" lleguen hasta aquí. -->
+                                            <!-- class = puede repetirse, id = debe ser único. -->
         <h2>BASQUETBOL</h2>
-        <p class="subrayado">Mi trayectoria en clubes:</p>
-        <ol>
+        
+        <p class="subrayado">Mi trayectoria en clubes:</p> <!-- Párrafo al que luego CSS le aplica el estilo definido en la clase "subrayado". -->
+        
+        <ol> <!-- Lista ordenada porque los clubes siguen un orden cronológico. -->
             <li><a href="https://www.google.com/maps/place/Escuela+y+Jardín+N+321/@-41.1225886,-71.4052742,20.25z/data=!4m6!3m5!1s0x961a70bfe6280dc7:0xe3f27761b149e1d0!8m2!3d-41.1225547!4d-71.4054107!16s%2Fg%2F11c14ylg72?entry=ttu&g_ep=EgoyMDI2MDQxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Club Anay Hue</a>, San Carlos de Bariloche</li>
             <li><a href="https://www.google.com/maps/place/Club+Los+Pehuenes/@-41.1262278,-71.4039848,17.25z/data=!4m6!3m5!1s0x961a70949b50d329:0xc07792ee50c0aace!8m2!3d-41.1265715!4d-71.4039978!16s%2Fg%2F1v8gd73y?entry=ttu&g_ep=EgoyMDI2MDQxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Club Los Pehuenes</a>, San Carlos de Bariloche</li>
             <li><a href="https://www.google.com/maps/place/Club+Náutico+Buchardo+-+Sede+Núñez/@-34.5386376,-58.4624091,17.75z/data=!3m1!5s0x95bcb41f0e3c2051:0xc2dbefd348fdb84e!4m6!3m5!1s0x95bcb41f0da6e8ad:0xdbbe77db8a976140!8m2!3d-34.5385803!4d-58.4594541!16s%2Fg%2F1tfts896?entry=ttu&g_ep=EgoyMDI2MDQxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Club Náutico Buchardo</a>, Capital Federal</li>
             <li><a href="https://www.google.com/maps/place/Club+Atlético+All+Boys/@-34.6165998,-58.4989205,18.75z/data=!4m10!1m2!2m1!1sclub+atlético+all+boys!3m6!1s0x95bcc9d7353a9d07:0xf09d534090643651!8m2!3d-34.6165054!4d-58.4985667!15sChdjbHViIGF0bMOpdGljbyBhbGwgYm95c5IBC3NvY2Nlcl9jbHVi4AEA!16s%2Fg%2F1td3h6c7?entry=ttu&g_ep=EgoyMDI2MDQxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Club Atlético All Boys</a>, Capital Federal</li>
-        </ol>
+        </ol> <!-- target="_blank" abre el enlace en una nueva pestaña. -->
+
     </section>
+    
 </main>
-    <footer>
-        <p>© 2026 Valentin Cañiu - Todos los derechos reservados</p>
+
+    <footer> <!-- Pie de página del sitio, contiene información complementaria. -->
+
+        <p>© 2026 Valentin Cañiu - Todos los derechos reservados</p> <!-- Información legal o de autor. -->
+        
         <p>Seguime en:
             <a href="https://www.instagram.com/valentincaniu" target="_blank">Instagram</a> |
             <a href="https://www.linkedin.com/in/tiagovalentincañiucaba" target="_blank">LinkedIn</a>
-        </p>
+        </p> <!-- Enlaces externos a redes sociales. -->
+
     </footer>
+
 </body>
 </html>
